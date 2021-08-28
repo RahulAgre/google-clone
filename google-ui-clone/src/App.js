@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
-import Home from "./pages/Home";
+import Home from "./Home";
+import SearchPage from "./SearchPage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
 
           <Switch>
             <Route path="/search">
-            <h1>Google Search Engine</h1>
+              <SearchPage />
             </Route>
             <Route path="/">
               {/*Home (the one with the search component)*/}
